@@ -1,0 +1,7 @@
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\logica\Alumno.java
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\JPA_Prueba.java
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\persistencia\AlumnoJpaController.java
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\persistencia\ControladoraPersistencia.java
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\Martin\Documents\NetBeansProjects\JPA_Prueba\src\main\java\com\mycompany\jpa_prueba\persistencia\exceptions\IllegalOrphanException.java

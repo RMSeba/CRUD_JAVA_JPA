@@ -2,40 +2,33 @@
 package com.mycompany.jpa_prueba.logica;
 
 import java.io.Serializable;
-import java.util.LinkedList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class Carrera implements Serializable {
+public class Materia implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE)
     private int id;
     private String nombre;
-    @OneToMany(mappedBy="carre")
-    private LinkedList<Materia>listaMaterias;
+    private String tipo;
+    @ManyToOne
+    private Carrera carre;
 
-    public Carrera() {
+    public Materia() {
     }
 
-    public Carrera(int id, String nombre, LinkedList<Materia> listaMaterias) {
+    public Materia(int id, String nombre, String tipo, Carrera carre) {
         this.id = id;
         this.nombre = nombre;
-        this.listaMaterias = listaMaterias;
+        this.tipo = tipo;
+        this.carre = carre;
     }
 
-    public LinkedList<Materia> getListaMaterias() {
-        return listaMaterias;
-    }
-
-    public void setListaMaterias(LinkedList<Materia> listaMaterias) {
-        this.listaMaterias = listaMaterias;
-    }
-
-   
+  
 
     public int getId() {
         return id;
@@ -53,10 +46,19 @@ public class Carrera implements Serializable {
         this.nombre = nombre;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public String toString() {
-        return "Carrera{" + "id=" + id + ", nombre=" + nombre + '}';
+        return "Materia{" + "id=" + id + ", nombre=" + nombre + ", tipo=" + tipo + '}';
     }
+    
     
     
 }

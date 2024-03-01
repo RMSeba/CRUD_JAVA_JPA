@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Controladora {
     ControladoraPersistencia controlPersis = new ControladoraPersistencia();
     
+    //Alumno
     public void crearAlumno(Alumno alu){
     
     controlPersis.crearAlumno(alu);
@@ -26,5 +27,28 @@ public class Controladora {
     public ArrayList<Alumno>traerLista(){
     
         return controlPersis.traerLista();
+    }
+    
+    
+    //Carrera 
+    
+     public void crearCarrera(Carrera carre){
+    
+    controlPersis.crearCarrera(carre);
+    }
+    
+    public void eliminarCarrera(int id){
+    controlPersis.eliminarCarrera(id);
+    }
+    public void editarCarrera(Carrera carre){
+        controlPersis.editarCarrera(carre);
+    }
+    
+    public Carrera traerCarrera(int id){
+        return controlPersis.traerCarrera(id);
+    }
+    public ArrayList<Carrera>traerListaC(){
+    
+        return controlPersis.traerListaC();
     }
 }
